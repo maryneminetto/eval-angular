@@ -1,17 +1,12 @@
 export class Statistique {
-  public _id: string;
-  public titre: string;
-  public valeur: number;
+  public id: string;
+  public title: string;
+  public value: number;
   public appreciation: string;
-  constructor(
-    _id: string,
-    titre: string,
-    valeur: number,
-    appreciation: string
-  ) {
-    this._id = _id;
-    this.titre = titre;
-    this.valeur = valeur;
+  constructor(id: string, title: string, value: number, appreciation: string) {
+    this.id = id;
+    this.title = title;
+    this.value = value;
     this.appreciation = appreciation;
   }
 }
