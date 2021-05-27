@@ -7,9 +7,10 @@ import { Statistique } from 'src/models/statistique';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public tabStats: Statistique[] = [];
   public stat1: Statistique;
   public stat2: Statistique;
+
+  public tabStats: Statistique[] = [];
 
   constructor() {
     this.stat1 = new Statistique('1', 'Frigo', 50, 'warning');
