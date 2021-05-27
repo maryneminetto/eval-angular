@@ -7,6 +7,7 @@ import { StatistiqueComponent } from './statistique/statistique.component';
 import { ListeStatComponent } from './liste-stat/liste-stat.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { BordureAuSurvoleDirective } from './directives/bordure-au-survole.directive';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
     StatistiqueComponent,
     ListeStatComponent,
     FormComponent,
+    BordureAuSurvoleDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
