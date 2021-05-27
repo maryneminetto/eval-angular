@@ -43,4 +43,19 @@ export class ApiService {
         }
       );
   }
+
+  addState(title: string, value: number, appreciation: string) {
+    let donneesSaisies = {
+      title: title,
+      value: value,
+      appreciation: appreciation,
+    };
+
+    return this.http
+      .post('https://stats.naminilamy.fr/', donneesSaisies)
+      .toPromise()
+      .then((obj: any) => {
+        console.log(obj);
+      });
+  }
 }

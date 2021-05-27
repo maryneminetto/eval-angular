@@ -1,0 +1,28 @@
+<h2>Ici on aime les states</h2>
+<form (ngSubmit)="onSubmit()" #stateForm="ngForm">
+  <input
+    type="text"
+    id="stateTitle"
+    name="title"
+    class="form-control"
+    [(ngModel)]="title"
+    placeholder="Entrer le titre de votre state"
+  />
+  <input
+    type="number"
+    id="stateValue"
+    name="value"
+    class="form-control"
+    [(ngModel)]="value"
+    placeholder="Entrer la valeur de votre state"
+  />
+  <input
+    type="text"
+    id="stateAppre"
+    name="appreciation"
+    class="form-control"
+    [(ngModel)]="appreciation"
+    placeholder="Entrer l'appreciation de votre state"
+  />
+  <input type="Submit" name="stateSubmit" id="submit" />
+</form>

@@ -18,5 +18,9 @@ export class ListeStatComponent implements OnInit {
     this.apiService.delStat(s.id).then((retourApi) => console.log(retourApi));
   }
 
+  addState(s: Statistique) {
+    console.log(s);
+  }
+
   ngOnInit(): void {}
 }
