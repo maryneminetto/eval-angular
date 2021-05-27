@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { Statistique } from 'src/models/statistique';
 
 @Component({
@@ -7,15 +7,7 @@ import { Statistique } from 'src/models/statistique';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public stat1: Statistique;
-  public stat2: Statistique;
+  @Output() public tabStats: Statistique[] = [];
 
-  public tabStats: Statistique[] = [];
-
-  constructor() {
-    this.stat1 = new Statistique('1', 'Frigo', 50, 'warning');
-    this.stat2 = new Statistique('2', 'Machine à laver', 20, 'succes');
-
-    this.tabStats.push(this.stat1, this.stat2);
-  }
+  constructor() {}
 }
