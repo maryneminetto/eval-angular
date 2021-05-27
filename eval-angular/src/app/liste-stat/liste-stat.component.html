@@ -1,3 +1,7 @@
 <div class="liste-container">
-  <app-statistique *ngFor="let s of tabStats" [uneStat]="s"></app-statistique>
+  <app-statistique
+    *ngFor="let s of tabStats"
+    [uneStat]="s"
+    (demandeSuppr)="delState(s)"
+  ></app-statistique>
 </div>

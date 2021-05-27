@@ -1,5 +1,6 @@
 import { Component, Input, Output } from '@angular/core';
 import { Statistique } from 'src/models/statistique';
+import { ApiService } from 'src/services/api.service';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,5 @@ import { Statistique } from 'src/models/statistique';
 export class AppComponent {
   @Output() public tabStats: Statistique[] = [];
 
-  constructor() {}
+  constructor(private apiService: ApiService) {}
 }
